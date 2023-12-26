@@ -1,0 +1,191 @@
+*{  
+    margin: 0;
+    user-select: none;
+
+
+}
+
+@font-face {
+    font-family: Nexa;
+    src: url(nexa/Nexa-Heavy.ttf);
+}
+@font-face {
+    font-family: lilNexa;
+    src: url(nexa/Nexa-ExtraLight.ttf);
+}
+
+
+body{
+    background-color: #EEEEEE ;
+    overflow-y: hidden;
+
+}
+
+.texto{
+    display: flex;
+    position: relative;
+    top: 70px;
+    flex-flow: column;
+
+    text-align: center;
+    
+}
+.texto h1{
+    font-family: Nexa;
+}
+.texto p{
+    position: relative;
+    left: -2.2vw;
+    top: -1vh;
+
+    font-family: lilNexa;
+    font-weight: bolder;
+}
+.texto h1 span{
+    background: linear-gradient(81deg, #D62828 53.33%, #F77F00 101.28%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+
+.container-videos{
+
+
+    position: absolute;
+    display: grid;
+
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows:25% 25% 25% 25%;
+    justify-items: center;
+    align-items: center;
+
+    opacity: blur(0.9);
+
+    padding: 1%;
+   
+    margin-top: 4%;
+    margin-left: 15%;
+
+    border-radius: 40px;
+    box-shadow: 0px 4px 15px -2px rgba(0, 0, 0, 0.25);
+
+    background-color: #EEEEEE;
+   
+    width: 70.0vw;
+    height: 70.08vh;
+
+
+
+
+
+}
+
+.container-video{
+    margin: 0;
+    border-radius: 27px;
+    background-color: #424242;
+    width: 90%;
+    height: 90%;
+    z-index: 1;
+
+
+}
+#quadradovideos{
+    position: absolute;
+    right: 40%;
+    top: 30%;
+    filter: blur(1.4px);
+    
+    
+
+
+}
+
+.container-video:hover{
+    position: relative;
+
+
+
+}
+
+#buraco{
+    position: absolute;
+    transform: scaleX(-1);
+    bottom: -30px;
+    left: 0px;
+    height: 40%;
+
+}
+
+.ratinhocontatos{
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    z-index: 1;
+    filter: grayscale(100%);
+
+    transition: filter 500ms;
+}
+.ratinhocontatos img{
+    width: 120px;
+}
+.ratinhocontatos:hover{
+    filter: grayscale(0);
+}
+
+/*contatos ratinho*/
+.a img{
+    width: 70%;
+    max-width: 100px;
+
+}
+.a{
+    position: fixed;
+    top: 20px;
+    right: 10px;
+    opacity: 0;
+
+    transition: all 0.5s ease-in-out;
+}
+.ratinhocontatos:hover .a{
+    opacity: 1;
+    padding: 30px;
+    transform: translateX(-100px);
+
+}
+
+.borda{
+    width: 40px;
+    height: 40px;
+    display: flex;
+
+    justify-content: center;
+
+
+    background-color: white;
+    border-radius: 30px;
+}
+.borda:hover{
+    padding: 0.2vw;
+    
+}
+
+#bolota{
+    position: absolute;
+
+
+}
+
+.rataorato{
+    max-width: 300px;
+    position: absolute;
+    right: 0px;
+    bottom: -60px;
+
+    
+
+
+
+}
+/*contatos ratinho*/
